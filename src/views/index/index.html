@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+    <div id="app" v-cloak>
+      <layout :menu="['Hello','Store','List']" @click-menu="setMenu" :active="curMenu">
+        <template v-slot:default>
+          <template v-if="curMenu === 'Hello'">
+            <hello></hello>
+          </template>
+          <template v-else-if="curMenu === 'Store'">
+            <div class="title-link">
+              Index
+              <a-divider type="vertical"></a-divider>
+              <a href="hello.html">Hello</a>
+            </div>
+            <div class="store-demo">
+              <p>store.state.count: {{ $store.state.count }}</p>
+              <a-button type="primary" @click="increment" :style="{marginRight:'20px',marginBottom:'20px'}">Count ++</a-button>
+              <a-button type="default" @click="$store.commit('clear')">Clear</a-button>
+            </div>
+          </template>
+          <template v-else-if="curMenu === 'List'">
+            <my-list></my-list>
+          </template>
+        </template>
+      </layout>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
