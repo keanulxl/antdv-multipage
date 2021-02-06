@@ -1,0 +1,36 @@
+// variables scss自定义变量文件
+$primary-color: #1da57a;
+
+// 宽高
+@mixin wh($w: 100%, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+// 背景
+@mixin bg {
+  background-repeat: no-repeat; //不重复
+  background-size: cover; //大小填充
+  background-position: center; //定位居中
+}
+
+// 隐藏滚动条
+@mixin scroll {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0 !important; //chrome & safari
+  }
+  -ms-overflow-style: none; //ie
+  overflow: -moz-scrollbars-none; //Firefox
+}
+
+// 文本省略 h-行高 ln-行数
+@mixin text-truncate($lh, $lh-n) {
+  height: $lh * $lh-n;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lh-n;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
