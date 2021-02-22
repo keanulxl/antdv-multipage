@@ -8,7 +8,7 @@
     <a-layout-content>
       <a-page-header
         style="border: 1px solid rgb(235, 237, 240)"
-        title="Hello"
+        title="Store"
         sub-title="This is a subtitle"
         @back="() => goBack()"
       ></a-page-header>

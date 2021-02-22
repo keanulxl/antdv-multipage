@@ -1,6 +1,6 @@
 {
   "name": "antdv-multipage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "keanulxl",
   "private": true,
   "scripts": {
@@ -12,7 +12,9 @@
     "ant-design-vue": "^2.0.0-rc.9",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "nprogress": "^0.2.0",
     "vue": "^3.0.0",
+    "vue-router": "^4.0.4",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
@@ -28,7 +30,8 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "sass": "^1.32.6",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "vue-router": "^4.0.4"
   },
   "eslintConfig": {
     "root": true,

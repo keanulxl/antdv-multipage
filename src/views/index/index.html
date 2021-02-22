@@ -14,26 +14,9 @@
       </strong>
     </noscript>
     <div id="app" v-cloak>
-      <layout :menu="['Hello','Store','List']" @click-menu="setMenu" :active="curMenu">
+      <layout>
         <template v-slot:default>
-          <template v-if="curMenu === 'Hello'">
-            <hello></hello>
-          </template>
-          <template v-else-if="curMenu === 'Store'">
-            <div class="title-link">
-              Index
-              <a-divider type="vertical"></a-divider>
-              <a href="hello.html">Hello</a>
-            </div>
-            <div class="store-demo">
-              <p>store.state.count: {{ $store.state.count }}</p>
-              <a-button type="primary" @click="increment" :style="{marginRight:'20px',marginBottom:'20px'}">Count ++</a-button>
-              <a-button type="default" @click="$store.commit('clear')">Clear</a-button>
-            </div>
-          </template>
-          <template v-else-if="curMenu === 'List'">
-            <my-list></my-list>
-          </template>
+          <router-view></router-view>
         </template>
       </layout>
     </div>
