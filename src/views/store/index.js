@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import store from '@/store';
+import { store } from '@/main';
 import { Layout, Menu, PageHeader } from 'ant-design-vue';
 import App from './App';
 

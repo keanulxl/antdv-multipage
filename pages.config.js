@@ -3,8 +3,8 @@ module.exports = {
     title: 'Index Page',
     entry: 'src/views/index',
   },
-  hello: {
-    title: 'Hello Page',
-    entry: 'src/views/hello',
+  store: {
+    title: 'Store Page',
+    entry: 'src/views/store',
   },
 };
