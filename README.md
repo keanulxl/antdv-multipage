@@ -12,9 +12,9 @@
 
 - 无需关注配置，自由定制化开发，享用 Vue 生态体系，支持单页及多页面。
 - 开箱即用的高质量 UI 组件，共享 Ant Design of React 设计工具体系。
-- 现代浏览器和 IE11+（需要 [polyfills](https://www.antdv.com/docs/vue/getting-started-cn/#兼容性)）
+- 支持现代浏览器和 IE11+（需要 [polyfills](https://www.antdv.com/docs/vue/getting-started-cn/#兼容性)）
 - 支持服务端渲染
-- [Electron](https://www.electronjs.org/)
+- 支持 [Electron](https://www.electronjs.org/)
 
 ## 🎮 快速启动
 
