@@ -29,6 +29,7 @@
       </a-layout-header>
       <!-- main -->
       <a-layout-content>
+        <!-- 插槽 -->
         <slot></slot>
       </a-layout-content>
       <!-- footer -->
@@ -79,9 +80,6 @@ export default {
       // 监听路由信息更新当前选中侧边栏
       this.selectedKeys = [route.name];
     },
-  },
-  created() {
-    console.log(this.$route);
   },
 };
 </script>
