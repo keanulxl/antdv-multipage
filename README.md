@@ -21,7 +21,7 @@
 ### 克隆
 
 ```
-git clone https://github.com/keanulxl/antdv-mp.git
+git clone https://github.com/6starlong/antdv-mp.git
 ```
 
 ### 推荐使用淘宝 NPM 镜像
